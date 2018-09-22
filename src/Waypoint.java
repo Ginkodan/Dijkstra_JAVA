@@ -13,6 +13,7 @@ public class Waypoint implements Node {
     private Node predecessor;
     private List<Node> neighbours = new LinkedList<>();
 
+
     public Waypoint(String name) {
         this.name = name;
         this.activated = false;
@@ -76,4 +77,9 @@ public class Waypoint implements Node {
     public void addNeighbour(Node node) {
         neighbours.add(node);
     }
+
+
+
+
 }
+
