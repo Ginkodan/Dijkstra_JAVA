@@ -15,8 +15,8 @@ public class Algorithm {
     public void startPoint(String startPoint) {
 
         for (int i = 0; i < waypoint.length; i++) {
-           if (waypoint[i].getName() = startPoint)
-               waypoint[ï].activated = true;
+           if (waypoint[i].getName() == startPoint)
+               waypoint[i].activated = true;
         }
 
     }
