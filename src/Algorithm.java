@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.LinkedList;
 import java.util.Map;
 
 public class Algorithm {
@@ -8,21 +9,24 @@ public class Algorithm {
     int startPoint;
     boolean destinationPoint;
     private int numbWaypoints;
-    private Network network;
+    Waypoint[] waypoint;
+
+
+    public void startPoint(String startPoint) {
+
+        for (int i = 0; i < waypoint.length; i++) {
+           if (waypoint[i].getName() = startPoint)
+               waypoint[ï].activated = true;
+        }
+
+    }
 
 
 
 
+    public void setVisited(boolean visited){
 
-
-
-
-
-
-    public static void setStartpoint(int startPoint){
-
-        startPoint = 0;
-
+    waypoint[1].setVisited(true);
 
     }
 
@@ -50,6 +54,7 @@ public class Algorithm {
 
 
     }
+
 
 
 }
