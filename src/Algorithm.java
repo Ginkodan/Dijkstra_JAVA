@@ -1,5 +1,7 @@
 import java.awt.*;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 
 public class Algorithm {
@@ -9,22 +11,15 @@ public class Algorithm {
     boolean destinationPoint;
     private int numbWaypoints;
     Waypoint[] waypoint;
-    Network network;
+    private HashMap<String, Waypoint> unvisitedNodeList;
+    private Network network;
     int currentWaypoint;
+    List<Node> neighbo = new LinkedList<>();
 
 
     public void startPoint(String startPoint) {
 
-        for (int i = 0; i < waypoint.length; i++) {
-            if (waypoint[i].getName() == startPoint) {
-                waypoint[i].activated = true;
-                waypoint[i] = node;
-                i = currentWaypoint;
-                compareAndSetShortestWaypointActivated(currentWaypoint);
-
-            } else {
-                waypoint[i].distanceFromStart = 0;
-            }
+        this.startPoint = this.currentWaypoint;
 
         }
 
@@ -33,7 +28,7 @@ public class Algorithm {
 
 
 
-
+/*
 
 
     public void setVisited(boolean visited){
@@ -50,10 +45,11 @@ public class Algorithm {
 
                 for (int i = 0; i  > waypoint ; i++) {
 
+
                 }
 
 
-                    waypoint[currentWaypoint].getNeighbours.get(1);
+                   // waypoint[currentWaypoint].getNeighbours.get(1);$
                     network.getDistance(network.getNodes(waypoint[currentWaypoint], waypoint(currentWaypoint + 1)));
 
             }
@@ -78,13 +74,11 @@ public class Algorithm {
     }
 
 
-    public static void chooseShortestPath(){
+    public static void chooseShortestPath() {
+
+*/
+        }}
 
 
 
 
-    }
-
-
-
-}

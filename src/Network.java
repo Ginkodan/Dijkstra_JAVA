@@ -12,7 +12,10 @@ public class Network {
     public Network(String path) {
         nodes = new LinkedList<>();
         generateNetwork(readCSV(path));
+
     }
+
+
 
     private void generateNetwork(List<String[]> links) {
         distances = new HashMap<>();
